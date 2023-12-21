@@ -17,7 +17,7 @@ RUN mv kubectl /usr/local/bin/
 
 # COPY backup-user.bash /backup/backup-user.bash
 # COPY backup.bash /backup/backup.bash
-COPY backup-v0.15.1.bash /backup/backup.bash
+COPY backup-v0.15.2.bash /backup/backup.bash
 
 # Make the script executable
 RUN chmod +x /backup/backup.bash

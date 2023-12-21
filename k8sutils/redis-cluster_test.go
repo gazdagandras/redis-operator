@@ -191,7 +191,7 @@ func Test_generateRedisClusterParams(t *testing.T) {
 func Test_generateRedisClusterContainerParams(t *testing.T) {
 	path := filepath.Join("..", "tests", "testdata", "redis-cluster.yaml")
 	expectedLeaderContainer := containerParameters{
-		Image:           "quay.io/opstree/redis:v7.0.12",
+		Image:           "quay.io/opstree/redis:v7.0.13",
 		ImagePullPolicy: corev1.PullPolicy("IfNotPresent"),
 		Resources: &corev1.ResourceRequirements{
 			Requests: corev1.ResourceList{
@@ -304,7 +304,7 @@ func Test_generateRedisClusterContainerParams(t *testing.T) {
 	}
 
 	expectedFollowerContainer := containerParameters{
-		Image:           "quay.io/opstree/redis:v7.0.12",
+		Image:           "quay.io/opstree/redis:v7.0.13",
 		ImagePullPolicy: corev1.PullPolicy("IfNotPresent"),
 		Resources: &corev1.ResourceRequirements{
 			Requests: corev1.ResourceList{

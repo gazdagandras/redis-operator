@@ -7,7 +7,7 @@ metadata:
     redis.opstreelabs.in/recreate-statefulset: "true"
 spec:
   kubernetesConfig:
-    image: quay.io/opstree/redis:v7.0.12
+    image: quay.io/opstree/redis:v7.0.13
     imagePullPolicy: IfNotPresent
   podSecurityContext:
     runAsUser: 1000

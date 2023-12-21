@@ -85,7 +85,7 @@ func Test_generateRedisSentinelParams(t *testing.T) {
 func Test_generateRedisSentinelContainerParams(t *testing.T) {
 	path := filepath.Join("..", "tests", "testdata", "redis-sentinel.yaml")
 	expected := containerParameters{
-		Image:           "quay.io/opstree/redis:v7.0.12",
+		Image:           "quay.io/opstree/redis:v7.0.13",
 		ImagePullPolicy: corev1.PullPolicy("IfNotPresent"),
 		Resources: &corev1.ResourceRequirements{
 			Requests: corev1.ResourceList{

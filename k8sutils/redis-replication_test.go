@@ -93,7 +93,7 @@ func Test_generateRedisReplicationParams(t *testing.T) {
 func Test_generateRedisReplicationContainerParams(t *testing.T) {
 	path := filepath.Join("..", "tests", "testdata", "redis-replication.yaml")
 	expected := containerParameters{
-		Image:           "quay.io/opstree/redis:v7.0.12",
+		Image:           "quay.io/opstree/redis:v7.0.13",
 		ImagePullPolicy: corev1.PullPolicy("IfNotPresent"),
 		Resources: &corev1.ResourceRequirements{
 			Requests: corev1.ResourceList{
